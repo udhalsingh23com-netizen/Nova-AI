@@ -1,6 +1,6 @@
 const MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
   const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
